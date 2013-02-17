@@ -1,0 +1,12 @@
+<ul class="left">
+  <li class="home-container"><a class="home" href="/">Ghost<span>.phish</span></a></li>
+</ul>
+
+<ul class="right">
+  {{#if loggedIn}}
+    <li><a class="header-link" href="/logout">LOGOUT</a></li>
+  {{else}}
+    <li><a class="login header-link" href="/login">LOGIN</a></li>
+    <li><a class="register header-link" href="/register">REGISTER</a></li>
+  {{/if}}
+</ul>

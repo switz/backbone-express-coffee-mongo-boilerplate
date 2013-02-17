@@ -1,0 +1,91 @@
+@import 'nib'
+
+wavesblue = #0a64a4
+
+header
+  height 50px
+  width 100%
+  border-bottom 1px solid #AAA
+  background #F6F6F6
+  position relative
+  z-index 99
+  -webkit-box-shadow 0px 3px 2px -2px rgba(61, 61, 61, 0.4)
+  box-shadow 0px 3px 2px -2px rgba(61, 61, 61, 0.4)
+
+  ul
+    height 50px
+    width 80%
+    margin 0
+
+    li
+      height 100%
+      list-style-type none
+      margin 0
+      padding 0
+
+    &.left
+      position absolute
+      left 0
+      max-width 20%
+
+      li
+        float left
+
+        a:hover
+          text-decoration none
+
+        &.home-container
+          font-family 'Lato'
+          font-style italic
+          font-weight 700
+          font-size 1.2em
+
+          a.home
+            font-size 2em
+            line-height 1.5em
+            height 50px
+            color wavesblue
+            display block
+            padding 0 10px 0 10px
+
+            &:hover
+              color #F6F6F6
+              background wavesblue
+
+            span
+              font-size .5em
+
+    &.right
+      position absolute
+      right 0
+
+      li
+        float right
+        width 100px
+        height 100%
+        text-align center
+        border-left 1px solid #DDD
+
+        &:hover, &.active
+          border-left 1px solid wavesblue
+
+        a, a:visited
+          color wavesblue
+          font-size 1.4em
+          line-height 2.7em
+          height 100%
+          width 100%
+          display block
+          //font-weight bold
+          font-family "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif
+
+          &:hover, &.active
+            color #F6F6F6
+            background wavesblue
+            text-decoration none
+
+          span
+            font-size .7em
+
+          &.plus
+            line-height .8em

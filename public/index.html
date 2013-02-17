@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <head>
+    <link href="https://tweezerio.s3.amazonaws.com/index.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <title>Tweezer</title>
+    <meta content="width=device-width" name="viewport">
+  </head>
+  <body>
+    <header id=header-container class=header-container>
+    </header>
+    <div class="container outer-container">
+      <div id=page-container class=page-container></div>
+    </div>
+    <footer></footer>
+    <ul id=notifications></ul>
+    <script type="text/javascript">
+      var user = {};
+    </script>
+    <script type="text/javascript" src="https://tweezerio.s3.amazonaws.com/tweezer.js"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v1/" type="text/javascript"></script>
+    <script type="text/javascript" data-key="pk_live_HWMNuT2clwOWV5bNVMyNzws6" src="https://checkout.stripe.com/v2/checkout.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38194925-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<form action="/register" method="post">
+  <input type=hidden value="{{csrf}}" name="_csrf" />
+  <div>
+    <label for=email>Email:</label>
+    <input class=email type="text" placeholder="Email" name="email"/>
+    <div class=invalid>✘</div>
+  </div>
+  <div>
+    <label for=password>Password:</label>
+    <input class=password type="password" placeholder="Password" name="password"/>
+    <div class=invalid>✘</div>
+  </div>
+  <div class=forbutton>
+    <sup>Password must be at least 6 characters</sup>
+    <br>
+    <input type="submit" value="Register"/>
+  </div>
+</form>

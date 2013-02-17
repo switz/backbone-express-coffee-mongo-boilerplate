@@ -1,0 +1,72 @@
+// nib is a powerful lib for stylus that provides cross-browser css3 mixins.
+// No more vendor prefixes. http://visionmedia.github.com/nib/
+@import 'nib'
+
+@import url(//fonts.googleapis.com/css?family=Lato:700,700italic);
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://themes.googleusercontent.com/licensed/font?kit=HkF_qI1x_noxlxhrhMQYEI_sLczJPRm2COowb5SrMT8) format('woff');
+}
+
+wavesblue = #0a64a4
+
+// Apply a natural box layout model to all elements.
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+*
+  box-sizing: border-box
+
+body
+  background #F8F8F8 //004756
+  color #333333
+  font-family Helvetica, Arial, sans-serif
+
+  #page-container
+    padding 20px
+    display none
+
+  ul#notifications
+    position fixed
+    top 50px
+    right 0
+    padding 20px
+    z-index 99
+
+    li
+      background #FFF
+      list-style-type none
+      color #333
+      width 300px
+      border-radius(5px)
+      border 3px solid #EEE
+      margin 10px
+
+      div
+        position relative
+        padding 0 10px
+
+        img
+          position absolute
+          top 0
+          right 0
+          max-height 40px
+          max-width 40px
+          opacity .7
+
+        a
+          position absolute
+          top 0
+          left 0
+
+        h3
+          line-height 1em
+
+.clear
+  clear both

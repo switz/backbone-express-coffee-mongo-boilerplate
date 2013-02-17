@@ -1,0 +1,14 @@
+<form action="/login" method="post">
+  <input type=hidden value={{csrf}} name=_csrf />
+  <div>
+    <label for=email>Email:</label>
+    <input class=email type="text" placeholder="Email" name="email"/>
+  </div>
+  <div>
+    <label for=password>Password:</label>
+    <input class=password type="password" placeholder="Password" name="password"/>
+  </div>
+  <div class=forbutton>
+    <input type="submit" value="Login"/>
+  </div>
+</form>
