@@ -23,6 +23,18 @@ This project currently employs email and password authentication. It is baked in
 ## Grunt
 In order to compile everything from coffeescript to stylus to handlebars, this project utilizes grunt. Grunt is an amazing tool. While developing just run `grunt watch` and your frontend code will compile on saves. The serverside runs coffeescript natively, therefore there is no need to compile it. `grunt compile` will compile the project once (including templates and styles). `grunt production` will compile your files for production. Edit `grunt.js` to modify this process. It's fairly straightforward, so customize it to your hearts delight. This process could be improved slightly in its current iteration.
 
+## Directory Structure
+    /app - backbone frontend
+      /collections
+      /models
+      /utils - frontend utilities
+      /views
+        /templates - handlebars templates
+        /styles - stylus files
+    /public
+    /server - express backend
+    /vendor - vendor scripts
+
 ## Contributing
 I built this project to suit my own needs. If you find something you want to improve, feel free to send over a pull request. I can't promise that I'll merge it due to my personal preferences, but I can promise that I'll take a look at it and get back to you in a timely fashion. This repo is definitely a *work in progress* and is nowhere near perfect.
 
