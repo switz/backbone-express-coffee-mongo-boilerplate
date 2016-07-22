@@ -1,4 +1,5 @@
 **NOTE: This is still a WIP. I'll be improving the README shortly**
+**NOTE2: Vestige of the past. Don't use this**
 
 # Backbone Boilerplate
 I built this after I couldn't find a suitable boilerplate project for Backbone. Most of the boilerplate Backbone projects I found either offered too much, or too little. This is somewhere in between. It's lightweight, yet easily extensible. Want to add another page? Just create a new file in `app/views` and extend `App.Views.View`, plus a single line in your router. Plus, this project is javascript from the top to bottom, utilizing a mongodb bson store via mongoose. Authentication is baked directly into the project, in accordance with [this fantastic post](http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt).
