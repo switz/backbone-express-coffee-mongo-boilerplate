@@ -1,4 +1,4 @@
-**NOTE: This is still a WIP. I'll be improving the README shortly**
+**NOTE: This is still a WIP. I'll be improving the README shortly**    
 **NOTE2: Vestige of the past. Don't use this**
 
 # Backbone Boilerplate
